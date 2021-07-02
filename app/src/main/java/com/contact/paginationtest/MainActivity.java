@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
+import com.contact.paginationtest.paging_custom.Paging0Activity;
+import com.contact.paginationtest.paging_custom.Paging0Adapter;
 import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(photosAdapter);
 
+    }
+
+    public void onClik(View view) {
+
+        startActivity(new Intent(this, Paging0Activity.class));
     }
 }
