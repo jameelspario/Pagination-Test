@@ -82,7 +82,8 @@ public abstract class AbstractAdapter<T> extends RecyclerView.Adapter<RecyclerVi
     public void addData(List<T> dataViews) {
         Log.e("Abst", "addData");
         items_list.addAll(dataViews);
-        notifyDataSetChanged();
+        //notifyDataSetChanged();
+        //notifyItemRangeChanged();
     }
 
     @Override

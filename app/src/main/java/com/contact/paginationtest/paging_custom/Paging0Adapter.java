@@ -43,7 +43,8 @@ public class Paging0Adapter extends AbstractAdapter<Modal>{
         void bind(Modal m){
             Log.e("Abst 1", "addData");
 
-            Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(binding.imageView);
+            //Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(binding.imageView);
+            Picasso.get().load("https://i.ibb.co/stsW9Gk/Screenshot-1.png").into(binding.imageView);
 
             binding.txt.setText(m.title);
         }
